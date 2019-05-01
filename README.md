@@ -47,12 +47,16 @@
     git checkout -b readdev # 基于当前本地分支(master)创建新的分支(readdev), Head指针指向新分支readdev
     git branch master # 切换回到本地的master分支
     git branch -d test # 删除test分支，删除test分支的时候Head指针不能指向test分支。
+    git branch -r -d origin/master # 删除本地的远程分支origin/master。只是删除了开发本地的远程分支，不是删除github上面的master分支。
+    git checkout -b readme origin/dev # 创建新的本地分支readme, 并且让该本地分支追踪远程分支origin/dev.
     
   
   ### 2. 对远程仓库的操作
     git remote add cpd https://github.com/LouisU/continuousPyDj.git  # 添加远程仓库，命名远程仓库的名字为cpd
+    git remote rename cpd origin # 修改本地的远程仓库cpd的名字，将cpd改成了origin
     git fetch cpd # 拉取远程仓库的文件
     git merger cpd/master # 将远程分支cpd/master合并到当前分支
+    
     git push cpd master cpd/master 
 
   ### 3. 本地远程之间操作：
