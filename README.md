@@ -37,24 +37,23 @@
   14.
 
 
-1. Python
+## 1. Python
     Python的基础篇
     Python的魔法函数
 
-2. Django
+## 2. Django
 
-3. Django REST API
+## 3. Django REST API
 
-4. Celery
+## 4. Celery
 
-5. Docker
+## 5. Docker
 
-6. Git
+## 6. Git
   对本地仓库的操作
    git init # 初始化
    git add FILE_NAME/DIRECTORY_NAME
    git commit -m "This is first commit"
-
    git branch # 查看当前处于的本地分支
   
   对远程仓库的操作
