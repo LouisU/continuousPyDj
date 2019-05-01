@@ -44,6 +44,10 @@
     git add FILE_NAME/DIRECTORY_NAME
     git commit -m "This is first commit"
     git branch # 查看当前处于的本地分支
+    git checkout -b readdev # 基于当前本地分支(master)创建新的分支(readdev), Head指针指向新分支readdev
+    git branch master # 切换回到本地的master分支
+    git branch -d test # 删除test分支，删除test分支的时候Head指针不能指向test分支。
+    
   
   ### 2. 对远程仓库的操作
     git remote add cpd https://github.com/LouisU/continuousPyDj.git  # 添加远程仓库，命名远程仓库的名字为cpd
@@ -60,7 +64,7 @@
       project registory -> branches -> master分支上的change default branch -> add rule
 
       添加保护master的规则: Require pull request reviews before merging. 只能push到其他分支，然后发pull request. 
-      
+
       注意: Branch name pattern需要填一个能匹配上master的模型。（我这里直接写成master）
 
 ## 8. MarkDown
