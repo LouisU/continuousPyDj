@@ -50,6 +50,8 @@
     git branch -d test # 删除test分支，删除test分支的时候Head指针不能指向test分支。
     git branch -r -d origin/master # 删除本地的远程分支origin/master。只是删除了开发本地的远程分支，不是删除github上面的master分支。
     git checkout -b readme origin/dev # 创建新的本地分支readme, 并且让该本地分支追踪远程分支origin/dev.
+    git branch -u origin/dev # 设置当前分支追踪远程分支origin/dev
+    git branch -vv # 查看当前分支的追踪情况
     
   
   ### 2. 对远程仓库的操作
