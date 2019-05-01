@@ -54,6 +54,12 @@
     git branch -vv # 查看当前分支的追踪情况
     git branch --unset-upstream # 解除当前本地分支和远程分支的追踪关系
     git diff <source_branch> <target_branch>  # 查看当前分支和目标分支的区别
+    git remote -v  # 下面显示了可抓取和推送的origin的地址。如果没有推送权限，就看不到push的地址。
+      origin  https://github.com/wangmingshun/studygit.git (fetch)
+      origin  https://github.com/wangmingshun/studygit.git (push)
+      # Todo 如何使得project clone下来之后没有push权限？
+
+    git config color.ui true # 彩色的输出
     
   
   ### 2. 对远程仓库的操作
