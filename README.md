@@ -50,6 +50,22 @@
 5. Docker
 
 6. Git
+  对本地仓库的操作
+   git init # 初始化
+   git add FILE_NAME/DIRECTORY_NAME
+   git commit -m "This is first commit"
+
+   git branch # 查看当前处于的本地分支
+  
+  对远程仓库的操作
+    git remote add cpd https://github.com/LouisU/continuousPyDj.git  # 添加远程仓库，命名远程仓库的名字为cpd
+    git fetch cpd # 拉取远程仓库的文件
+    git merger cpd/master # 将远程分支cpd/master合并到当前分支
+    git push cpd master cpd/master 
+
+  本地远程之间操作：
+    git fetch xxx
+    git merge xxx
 
 7. MarkDown
     标题语法 “#” “##” “###”
