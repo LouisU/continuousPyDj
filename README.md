@@ -32,27 +32,35 @@
 
 ## 6. Git
   ### 1. 对本地仓库的操作
-    git init # 初始化
-    git add FILE_NAME/DIRECTORY_NAME
-    git commit -m "This is first commit"
-    git branch # 查看当前处于的本地分支
+    - git init # 初始化
+    - git add FILE_NAME/DIRECTORY_NAME
+    - git commit -m "This is first commit"
+    - git branch # 查看当前处于的本地分支
   
   ### 2. 对远程仓库的操作
-    + git remote add cpd https://github.com/LouisU/continuousPyDj.git  # 添加远程仓库，命名远程仓库的名字为cpd
-    + git fetch cpd # 拉取远程仓库的文件
-    + git merger cpd/master # 将远程分支cpd/master合并到当前分支
-    + git push cpd master cpd/master 
+    * git remote add cpd https://github.com/LouisU/continuousPyDj.git  # 添加远程仓库，命名远程仓库的名字为cpd
+    * git fetch cpd # 拉取远程仓库的文件
+    * git merger cpd/master # 将远程分支cpd/master合并到当前分支
+    - git push cpd master cpd/master 
 
   ### 3. 本地远程之间操作：
-    git fetch xxx
-    git merge xxx
+    - git fetch xxx
+    - git merge xxx
 
 ## 7. MarkDown
     1. 标题语法 “#” “##” “###”
     2. 页内跳转
         锚点语法: 跳转点的语法 [锚点内容](#跳转点的标题)
         锚点目标: 目标点的语法 #标题
-    3. 有序
+    3. 有序列表的语法: 数字 + 英文句号 + 空格 + 列表内容
+       举个栗子: 
+        1. 安装
+        2. 配置
+    4. 无序列表的语法: -/* + 空格 + 列表内容
+        * 水果
+        * 服饰
+        
+
 
 
 
