@@ -59,6 +59,7 @@
     1. 设置不可直接推送到github master分支。
 
 ## 8. MarkDown
+详情参照： https://github.com/guodongxiaren/README#readme  
     1. 标题语法 “#” “##” “###”
 
     2. 页内跳转
