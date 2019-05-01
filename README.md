@@ -1,4 +1,5 @@
-# continuousPyDj
+# continuousPyDj 
+![media/img/icon](icon)
 ## 通过一个电商的项目，持续练习学习一下开发技能。其中涉及到的知识点有：
 ### [1. Python](#1-python)
 
@@ -59,8 +60,8 @@
     4. 无序列表的语法: -/* + 空格 + 列表内容
         * 水果
         * 服饰
-        
 
 
 
+![media/img/qrcode](qrcode)
 
