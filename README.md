@@ -3,7 +3,7 @@
 ![](media/img/docker.png "docker") 
 ![](media/img/django.png "django") 
 
-## 通过一个电商的项目，持续练习学习一下开发技能:
+## 通过一个后端项目，持续练习学习以下开发技能:
 ### [1. Python](#1-python)
 
 ### [2. Django](#2-django)
@@ -16,7 +16,10 @@
 
 ### [6. Git](#6-git)
 
-### [7. MarkDown](#7-markdown)
+### [7. Github](#7-github)
+
+### [8. MarkDown](#8-markdown)
+
 ***
 ### 编写README文档的原则和顺序:
   1. 一切从需求出发，先解决问题。
@@ -52,7 +55,10 @@
     git fetch xxx
     git merge xxx
 
-## 7. MarkDown
+## 7. Github
+    1. 设置不可直接推送到github master分支。
+
+## 8. MarkDown
     1. 标题语法 “#” “##” “###”
 
     2. 页内跳转
