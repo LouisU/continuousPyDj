@@ -52,6 +52,8 @@
     git checkout -b readme origin/dev # 创建新的本地分支readme, 并且让该本地分支追踪远程分支origin/dev.
     git branch -u origin/dev # 设置当前分支追踪远程分支origin/dev
     git branch -vv # 查看当前分支的追踪情况
+    git branch --unset-upstream # 解除当前本地分支和远程分支的追踪关系
+    git diff <source_branch> <target_branch>  # 查看当前分支和目标分支的区别
     
   
   ### 2. 对远程仓库的操作
