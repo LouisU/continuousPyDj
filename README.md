@@ -1,5 +1,5 @@
 # continuousPyDj 
-![media/img/icon](icon)
+![/media/img/icon](icon)
 ## 通过一个电商的项目，持续练习学习一下开发技能。其中涉及到的知识点有：
 ### [1. Python](#1-python)
 
@@ -63,5 +63,5 @@
 
 
 
-![media/img/qrcode](qrcode)
+![./media/img/qrcode](qrcode)
 
