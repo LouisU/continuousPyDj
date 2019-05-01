@@ -3,7 +3,7 @@
 ![](media/img/docker.png "docker") 
 ![](media/img/django.png "django") 
 
-## 通过一个电商的项目，持续练习学习一下开发技能。其中涉及到的知识点有：
+## 通过一个电商的项目，持续练习学习一下开发技能:
 ### [1. Python](#1-python)
 
 ### [2. Django](#2-django)
@@ -76,11 +76,8 @@
 
     6. 显示横线效果语法: *** / --- 
 
-    7. 
-
-***
-
+***  
 ![baidu](https://camo.githubusercontent.com/15675678891dead0d516b6ee7a57ed12101ce69a/687474703a2f2f7777772e62616964752e636f6d2f696d672f62646c6f676f2e676966 "百度logo")  
-欢迎扫码加好友一起学习讨论：
+欢迎扫码加好友一起学习讨论：  
 ![](./media/img/qrcode.jpg "微信扫码加好友")
 
