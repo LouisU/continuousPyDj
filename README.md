@@ -52,6 +52,8 @@
     git checkout -b readme origin/dev # 创建新的本地分支readme, 并且让该本地分支追踪远程分支origin/dev.
     git branch -u origin/dev # 设置当前分支追踪远程分支origin/dev
     git branch -vv # 查看当前分支的追踪情况
+    git branch -u origin/dev # 设置当前本地追踪远程分支origin/dev
+    # Todo 设置追踪关系有什么作用和意义？
     git branch --unset-upstream # 解除当前本地分支和远程分支的追踪关系
     git diff <source_branch> <target_branch>  # 查看当前分支和目标分支的区别
     git remote -v  # 下面显示了可抓取和推送的origin的地址。如果没有推送权限，就看不到push的地址。
