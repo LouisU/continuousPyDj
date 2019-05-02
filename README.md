@@ -39,7 +39,7 @@
 ## 5. Docker
 
 ## 6. Git
-*Think as a git:* *http://think-like-a-git.net*  
+*对git的理解文章推荐 《[Think like a git](http://think-like-a-git.net 'Think like a git')》*
    
 ### 1. 对本地仓库的操作
 git init # 初始化  
