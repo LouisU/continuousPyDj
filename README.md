@@ -39,7 +39,8 @@
 ## 5. Docker
 
 ## 6. Git
-    Think as a git
+*Think as a git:* *http://think-like-a-git.net*  
+   
   ### 1. 对本地仓库的操作
     git init # 初始化
     git add FILE_NAME/DIRECTORY_NAME  # 添加指定的文件/文件夹更新到本地仓库
@@ -95,8 +96,8 @@
       注意: Branch name pattern需要填一个能匹配上master的模型。（我这里直接写成master）
 
 ## 8. MarkDown
-详情参照： https://github.com/guodongxiaren/README#readme  
-    1. 标题语法 “#” “##” “###”
+*详情参照:* *https://github.com/guodongxiaren/README#readme*  
+    1. 标题语法: “#” “##” “###” "####" "#####" "######" 六个级别的标题
 
     2. 页内跳转
           锚点语法: 跳转点的语法 [锚点内容](#跳转点的标题)
@@ -118,6 +119,8 @@
         文章底百度log是网络图片 二维码是相对路径
 
     6. 显示横线效果语法: *** / --- 
+    7. 删除线效果语法: ~~准备删除的内容~~
+    8. 斜体字语法: *斜体1*
 
 ***  
 ![baidu](https://camo.githubusercontent.com/15675678891dead0d516b6ee7a57ed12101ce69a/687474703a2f2f7777772e62616964752e636f6d2f696d672f62646c6f676f2e676966 "百度logo")  
