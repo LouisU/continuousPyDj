@@ -76,7 +76,7 @@
     git merger cpd/master # 将远程分支cpd/master合并到当前分支
     git pull cpd/master # 将远程的分支拉取下来并且合并到当前分支
     
-    git push cpd master cpd/master 
+    git push cpd master cpd/master  # 将远程分支cpd/master拉取并合并到本地master分支上
 
   ~~### 3. 本地远程之间操作：
     git fetch xxx
