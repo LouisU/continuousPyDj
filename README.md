@@ -1,29 +1,29 @@
 # continuousPyDj 
-![](media/img/python.png "python") 
-![](media/img/docker.png "docker") 
-![](media/img/django.png "django") 
+>![](media/img/python.png "python") 
+>![](media/img/docker.png "docker") 
+>![](media/img/django.png "django") 
 
 ## 通过一个后端项目，持续练习学习以下开发技能:
-### [1. Python](#1-python)
+>### [1. Python](#1-python)
 
-### [2. Django](#2-django)
+>### [2. Django](#2-django)
 
-### [3. Django REST API](#3-django-rest-api)
+>### [3. Django REST API](#3-django-rest-api)
 
-### [4. Celery](#4-celery)
+>### [4. Celery](#4-celery)
 
-### [5. Docker](#5-docker)
+>### [5. Docker](#5-docker)
 
-### [6. Git](#6-git)
+>### [6. Git](#6-git)
 
-### [7. Github](#7-github)
+>### [7. Github](#7-github)
 
-### [8. MarkDown](#8-markdown)
+>### [8. MarkDown](#8-markdown)
 
 ***
-### 编写README文档的原则和顺序:
-  1. 一切从需求出发，先解决问题。
-  2. 解决问题后，回头将需要了解原理的步骤深入了解。
+>### 编写README文档的原则和顺序:
+>1. 一切从需求出发，先解决问题。
+>2. 解决问题后，回头将需要了解原理的步骤深入了解。
 
 ***
 ## 1. Python
@@ -69,6 +69,10 @@
     git config format.pretty oneline # 显示历史记录时，只显示一行注释信息
     git tag 1.0.0 1b2e1d63ff # 为分支1b2e1d63ff打上版本标签
     # Todo Git中的tag命令和Github上的版本管理如何联系起来？
+    git log --oneline --abbrev-commit --all --graph --decorate --color # 可以CMD命令行中看到分支的情况，且用彩色的图形表示出来。可以直接采用SourceTree开源软件来学习和观察分支在开发中变化情况。
+  
+  上文引用链接:  
+  [`SourceTree`](https://www.sourcetreeapp.com )  
     
   
   ### 2. 对远程仓库的操作
