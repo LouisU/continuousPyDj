@@ -70,9 +70,12 @@
     
     git push cpd master cpd/master 
 
-  ### 3. 本地远程之间操作：
+  ~~### 3. 本地远程之间操作：
     git fetch xxx
-    git merge xxx
+    git merge xxx~~
+  
+  # Todo 改版本的git操作分类是本地和远程操作。这样的分类也无法分类清晰。
+  # Todo 后期将改成：基本操作、高阶操作、场景应用
 
 ## 7. Github
     1. 设置不可直接推送到github master分支。
