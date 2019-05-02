@@ -40,9 +40,15 @@
 
 ## 6. Git
   ### 1. 对本地仓库的操作
+<<<<<<< HEAD
     git init # 初始化
     git add FILE_NAME/DIRECTORY_NAME  # 添加指定的文件/文件夹更新到本地仓库
     git add . # 添加所有的更新到本地仓库
+=======
+    git init # 初始化  
+    git add FILE_NAME/DIRECTORY_NAME  # 添加指定的文件/文件夹更新到本地仓库
+    git add . # 添加所有的更新到本地仓库  
+>>>>>>> readme
     git commit -m "This is first commit"
     git branch # 查看当前处于的本地分支
     git branch test # 创建本地分支test, 指正Head不变，之前指哪还是指哪
@@ -64,6 +70,7 @@
       # Todo 如何使得project clone下来之后没有push权限？
 
     git config color.ui true # 彩色的输出
+    git config format.pretty oneline # 显示历史记录时，只显示一行注释信息
     
   
   ### 2. 对远程仓库的操作
