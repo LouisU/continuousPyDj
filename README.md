@@ -39,6 +39,7 @@
 ## 5. Docker
 
 ## 6. Git
+    Think as a git
   ### 1. 对本地仓库的操作
     git init # 初始化
     git add FILE_NAME/DIRECTORY_NAME  # 添加指定的文件/文件夹更新到本地仓库
