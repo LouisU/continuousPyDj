@@ -74,6 +74,7 @@
     git remote rename cpd origin # 修改本地的远程仓库cpd的名字，将cpd改成了origin
     git fetch cpd # 拉取远程仓库的文件
     git merger cpd/master # 将远程分支cpd/master合并到当前分支
+    git pull cpd/master # 将远程的分支拉取下来并且合并到当前分支
     
     git push cpd master cpd/master 
 
