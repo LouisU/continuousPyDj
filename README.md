@@ -41,7 +41,8 @@
 ## 6. Git
   ### 1. 对本地仓库的操作
     git init # 初始化
-    git add FILE_NAME/DIRECTORY_NAME
+    git add FILE_NAME/DIRECTORY_NAME  # 添加指定的文件/文件夹更新到本地仓库
+    git add . # 添加所有的更新到本地仓库
     git commit -m "This is first commit"
     git branch # 查看当前处于的本地分支
     git branch test # 创建本地分支test, 指正Head不变，之前指哪还是指哪
@@ -53,7 +54,8 @@
     git branch -u origin/dev # 设置当前分支追踪远程分支origin/dev
     git branch -vv # 查看当前分支的追踪情况
     git branch -u origin/dev # 设置当前本地追踪远程分支origin/dev
-    # Todo 设置追踪关系有什么作用和意义？
+      # Todo 设置追踪关系有什么作用和意义？
+      追踪origin/dev后，当运行git status命令时，会提醒当前分支和origin/dev分支的先后关系。是否本地版本落后于origin/dev(远程有跟新，但本地没拉取), 或者先于origin/dev(本地有更新，但没有推送到远程)。
     git branch --unset-upstream # 解除当前本地分支和远程分支的追踪关系
     git diff <source_branch> <target_branch>  # 查看当前分支和目标分支的区别
     git remote -v  # 下面显示了可抓取和推送的origin的地址。如果没有推送权限，就看不到push的地址。
@@ -76,8 +78,8 @@
     git fetch xxx
     git merge xxx~~
   
-  # Todo 改版本的git操作分类是本地和远程操作。这样的分类也无法分类清晰。
-  # Todo 后期将改成：基本操作、高阶操作、场景应用
+    # Todo 改版本的git操作分类是本地和远程操作。这样的分类也无法分类清晰。
+    # Todo 后期将改成：基本操作、高阶操作、场景应用
 
 ## 7. Github
     1. 设置不可直接推送到github master分支。
