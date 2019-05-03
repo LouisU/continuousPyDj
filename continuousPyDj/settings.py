@@ -31,6 +31,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Customize the user auth table
+AUTH_USER_MODEL = 'users.UserProfile'
+
 
 # Application definition
 
@@ -40,7 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.admin',
     'rest_framework',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +133,5 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'templates'),)
+
+REGEX_MOBILE = "^1[3589]\d{9}$|^147\d{8}$|^176\d{8}$"
