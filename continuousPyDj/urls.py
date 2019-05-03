@@ -17,10 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from rest_framework.documentation import include_docs_urls
-from users.views import UserViewSet
+from users.views import UserViewSet, SmsCodeViewSet
 
 router = DefaultRouter()
 router.register(r'users', UserViewSet, base_name='users')
+router.register(r'codes', SmsCodeViewSet, base_name='codes')
 
 urlpatterns = [
     path(r'', include(router.urls)),

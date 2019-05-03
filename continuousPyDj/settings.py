@@ -133,3 +133,5 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'templates'),)
+
+REGEX_MOBILE = "^1[3589]\d{9}$|^147\d{8}$|^176\d{8}$"

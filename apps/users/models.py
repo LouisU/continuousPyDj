@@ -17,3 +17,17 @@ class UserProfile(AbstractUser):
         verbose_name = "用户"
         verbose_name_plural = "用户"
         # unique_together = ('phone', 'role')
+
+
+class VerifyCode(models.Model):
+
+    phone = models.CharField(max_length=11, verbose_name="电话")
+    code = models.CharField(max_length=10, verbose_name="验证码")
+    add_time = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
+
+    class Meta:
+        verbose_name = '验证码'
+        verbose_name_plural = '验证码'
+
+    def __str__(self):
+        return self.code
