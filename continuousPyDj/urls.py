@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from rest_framework.documentation import include_docs_urls
-from users.views import UserViewSet, SmsCodeViewSet
+from users.views import UserViewSet, SmsCodeViewSet, do
+
 
 router = DefaultRouter()
 router.register(r'users', UserViewSet, base_name='users')
@@ -29,5 +30,7 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
 
-    path(r'api-auth/', include('rest_framework.urls'))
+    path(r'api-auth/', include('rest_framework.urls')),
+
+    path(r'do/', do),
 ]

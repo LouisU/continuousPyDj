@@ -1,0 +1,10 @@
+Looking in indexes: https://pypi.doubanio.com/simple/
+Collecting sqlalchemy
+  Downloading https://pypi.doubanio.com/packages/2b/b2/e6f5c5efc68942edefaa924e8fbea0b32375baa434a511cbf6bb17769cf6/SQLAlchemy-1.3.3.tar.gz (5.9MB)
+Building wheels for collected packages: sqlalchemy
+  Building wheel for sqlalchemy (setup.py): started
+  Building wheel for sqlalchemy (setup.py): finished with status 'done'
+  Stored in directory: /Users/wuhao/Library/Caches/pip/wheels/8a/dd/8d/be2e9bc60bd0612ba0f5f0d2062954d5687ab39196000bc7e0
+Successfully built sqlalchemy
+Installing collected packages: sqlalchemy
+Successfully installed sqlalchemy-1.3.3

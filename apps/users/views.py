@@ -6,6 +6,10 @@ from random import choice
 from .models import VerifyCode
 from rest_framework.response import Response
 from .serializers import UserDetailSerializer, UserRegisterSerializer, SmsSerializer
+from .tasks import UserTask
+from django.http import JsonResponse
+
+
 # Create your views here.
 
 
@@ -27,6 +31,15 @@ class UserViewSet(mixins.CreateModelMixin,
     """
     # serializer_class = UserDetailSerializer
     queryset = User.objects.all()
+
+    # 若创建用户成功，那么将异步发送一短信给用户提示注册成功。
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+        UserTask.delay(phone='13xxxxxxxxx', info='register succeed')
+        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
 
 
     def get_serializer_class(self):
@@ -85,3 +98,11 @@ class SmsCodeViewSet(mixins.CreateModelMixin, viewsets.GenericViewSet):
         return Response({
             'phone': "短信发送失败"
         }, status=status.HTTP_400_BAD_REQUEST)
+
+
+def do(request):
+    # 执行异步任务
+    print('start user request')
+    UserTask.delay(2,3, name='louis')
+    print('end user request')
+    return JsonResponse({'result': 'ok'})

@@ -9,9 +9,16 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
+from __future__ import absolute_import, unicode_literals
+# ^^^ The above is required if you want to import from the celery
+# library.  If you don't have this then `from celery.schedules import`
+# becomes `proj.celery.schedules` in Python 2.x since it allows
+# for relative imports by default.
 
 import os
 import sys
+
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,6 +26,16 @@ sys.path.insert(0, BASE_DIR)
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 sys.path.insert(0, os.path.join(BASE_DIR, 'extra_apps'))
 
+
+# Celery settings
+
+CELERY_BROKER_URL = 'redis://localhost:6379/1'
+
+#: Only add pickle to this list if your broker is secured
+#: from unwanted access (see userguide/security.html)
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/2'
+CELERY_TASK_SERIALIZER = 'json'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
