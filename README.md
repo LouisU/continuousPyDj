@@ -95,6 +95,7 @@ git log --oneline --abbrev-commit --all --graph --decorate --color # 可以CMD�
     git pull cpd/master # 将远程的分支拉取下来并且合并到当前分支
     
     git push cpd master cpd/master  # 将远程分支cpd/master拉取并合并到本地master分支上
+    git reset --hard 1234abcd # 重新返回id为1234abcd的commit处
 
   ~~### 3. 本地远程之间操作：
     git fetch xxx
