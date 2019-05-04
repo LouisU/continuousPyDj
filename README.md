@@ -41,7 +41,16 @@
 [djangorestframework JWTToken](./documentation/djangorestframework/JWTToken.md)  
 # Todo 添加更多文档
 
-## 4. Celery
+## 4. Celery 实现异步任务和定时任务。
+```
+环境:
+python 3.7.3
+django 2.2.1
+celery 4.3.0
+```
+```
+
+```
 
 ## 5. Docker
 
