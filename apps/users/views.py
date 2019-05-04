@@ -6,7 +6,7 @@ from random import choice
 from .models import VerifyCode
 from rest_framework.response import Response
 from .serializers import UserDetailSerializer, UserRegisterSerializer, SmsSerializer
-from .tasks import UserTask
+from .tasks import user_inform
 from django.http import JsonResponse
 
 
@@ -38,7 +38,7 @@ class UserViewSet(mixins.CreateModelMixin,
         serializer.is_valid(raise_exception=True)
         self.perform_create(serializer)
         headers = self.get_success_headers(serializer.data)
-        UserTask.delay(phone='13xxxxxxxxx', info='register succeed')
+        user_inform.delay()
         return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
 
 
@@ -103,6 +103,6 @@ class SmsCodeViewSet(mixins.CreateModelMixin, viewsets.GenericViewSet):
 def do(request):
     # 执行异步任务
     print('start user request')
-    UserTask.delay(2,3, name='louis')
+    user_inform.delay()
     print('end user request')
     return JsonResponse({'result': 'ok'})

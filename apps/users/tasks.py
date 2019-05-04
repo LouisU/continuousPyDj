@@ -3,15 +3,21 @@
 # @Author  : Louis
 # @File    : tasks.py
 
-from celery.task import Task
+
 import time
+from celery import  shared_task
 
-class UserTask(Task):
+@shared_task
+def user_inform():
+    print("send Sms to User")
+    time.sleep(5)
+    print("done")
 
-    name = 'user-task'
 
-    def run(self, *args, **kwargs):
-        print("start user task")
-        time.sleep(5)
-        print("args={}, kwargs={}".format(args, kwargs))
-        print('end user task')
+@shared_task
+def add(x, y):
+    return x + y
+
+@shared_task
+def multiply(x, y):
+    return x * y
