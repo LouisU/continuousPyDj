@@ -47,6 +47,9 @@
 #### 3. [异步任务和定时任务](./documentation/celery/异步和定时任务.md)
 
 ## 5. Docker
+#### 1. [有异步和定时任务的DjangoAPP如何部署](./documentation/docker/有异步和定时任务的DjangoAPP如何部署.md) 
+#### 2. [yml文件快速部署](./documentation/docker/yml文件快速部署.md)
+#### 3. [部署到生产环境中](./documentation/docker/部署到生产环境中.md)
 
 ## 6. Git
 #### 1. [git原理](./documentation/git/git原理.md)

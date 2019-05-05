@@ -1,37 +1,38 @@
 version: '3'
 
-
-# Todo 新的问题，如何配置django和redis之间的连接
-
 services:
 
   app:
     build: .
     ports:
       - 80:8000
+    command: ./run_web.sh
     depends_on:
-      - mysql-security
-    environment:
-      MYSQL_SECURITY_ENV_HOST: mysql-security
-      MYSQL_SECURITY_ENV_MYSQL_DATABASE: demo
-      MYSQL_SECURITY_PORT_3306_TCP_PORT: 3306
-      MYSQL_SECURITY_ENV_MYSQL_ROOT_PASSWORD: root
+      - redis
     networks:
       - my-bridge
 
-  mysql-security:
-    image: mysql:5.7
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: demo
-    volumes:
-      - mysql-security:/var/lib/mysql
+  worker:
+    build: .
+    command: ./run_celery.sh
+    depends_on:
+      - redis
     networks:
       - my-bridge
 
-volumes:
-  mysql-security:
-    external: true
+  beat:
+    build: .
+    command: ./run_beat.sh
+    depends_on:
+      - redis
+    networks:
+      - my-bridge
+
+  redis:
+    image: redis
+    networks:
+      - my-bridge
+
 
 networks:
   my-bridge:

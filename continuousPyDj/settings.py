@@ -29,12 +29,12 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'extra_apps'))
 
 # Celery settings
 
-CELERY_BROKER_URL = 'redis://localhost:6379/1'
+CELERY_BROKER_URL = 'redis://redis:6379/1'
 
 #: Only add pickle to this list if your broker is secured
 #: from unwanted access (see userguide/security.html)
 CELERY_ACCEPT_CONTENT = ['json']
-CELERY_RESULT_BACKEND = 'redis://localhost:6379/2'
+CELERY_RESULT_BACKEND = 'redis://redis:6379/2'
 CELERY_TASK_SERIALIZER = 'json'
 
 # Quick-start development settings - unsuitable for production

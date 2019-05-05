@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-sleep 10
+sleep 5
 
-cd proj
-elery -A continuousPyDj beat -l INFO
+cd /var/www/continuousPyDj
+celery -A continuousPyDj worker -l INFO
