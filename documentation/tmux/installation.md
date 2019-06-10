@@ -20,4 +20,17 @@
 
 
 #### 设置tmux
+>建议将 Tmux 的快捷键前缀变为 Ctrl - a。按下 Ctrl - a 就将会比按下 Ctrl - b更容易、更便捷。
 >
+>若要将快捷键前缀变更为 Ctrl-a ，请将以下配置加入到 Tmux 的配置文件 ~/.tmux.conf 中: 
+>
+>     unbind C-b 
+>     set -g prefix C-a
+>
+>每当开启一个新的会话时，Tmux 都会先读取 ~/.tmux.conf 这个文件。该文件中存放的就是对 Tmux 的配置。
+
+>小提示：如果你希望新的配置项能够立即生效，那么你可以将下面这一行配置加入到文件~/.tmux.conf 中。
+>
+>     # bind a reload key
+>     bind R source-file ~/.tmux.conf ; display-message "Config reloaded.."
+>这样配置了之后，每当向 ~/.tmux.conf 文件中添加了新的配置，只需要按下 Ctrl-b r就可以重新加载配置并使新的配置生效，从而免去了开启一个新的会话。

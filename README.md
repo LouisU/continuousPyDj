@@ -72,8 +72,8 @@
 
 # 工具
 ## 1. Tmux
-#### 1. [下载安装初始化](./documentation/tmux_installation.md)
-#### 2. [用法简介]（./documentation/tmux_useage.md)
+#### 1. [下载安装初始化](./documentation/tmux/installation.md)
+#### 2. [用法简介](./documentation/tmux/useage.md)
 
 欢迎扫码加好友一起学习讨论：  
 ![](./media/img/qrcode.jpg "微信扫码加好友")
