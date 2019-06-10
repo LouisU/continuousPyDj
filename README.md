@@ -72,6 +72,7 @@
 
 # 工具
 ## 1. Tmux
+#### 1. [下载安装初始化](./documentation/tmux/installation.md)
 
 欢迎扫码加好友一起学习讨论：  
 ![](./media/img/qrcode.jpg "微信扫码加好友")
