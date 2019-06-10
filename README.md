@@ -62,7 +62,7 @@
 #### 2. [git命令](./documentation/git/git命令.md)
 #### 3. [git场景应用](./documentation/git/git场景应用.md)
 
-## 7. Github
+## 7. Githubtmux
 #### 1. [github的使用](./documentation/github/github的使用.md)
     
 ## 8. MarkDown
@@ -72,7 +72,8 @@
 
 # 工具
 ## 1. Tmux
-#### 1. [下载安装初始化](./documentation/tmux/installation.md)
+#### 1. [下载安装初始化](./documentation/tmux_installation.md)
+#### 2. [用法简介]（./documentation/tmux_useage.md)
 
 欢迎扫码加好友一起学习讨论：  
 ![](./media/img/qrcode.jpg "微信扫码加好友")
