@@ -1,6 +1,6 @@
 # continuousPyDj 
 
-### 本项目涉及一下知识:
+### 知识:
 >#### [1. Python](#1-python)
 
 >#### [2. Django](#2-django)
@@ -19,6 +19,9 @@
 
 >#### [9. 数据结构与算法](#9-数据结构与算法)
 
+### 工具:
+>#### [1. Tmux](#1-Tmux)
+
 ***
 >### 编写README文档的原则和顺序:
 ```
@@ -28,6 +31,7 @@
 
 
 ***
+# 知识：
 ## 1. Python
     Python的基础篇
     Python的魔法函数
@@ -58,7 +62,7 @@
 #### 2. [git命令](./documentation/git/git命令.md)
 #### 3. [git场景应用](./documentation/git/git场景应用.md)
 
-## 7. Github
+## 7. Githubtmux
 #### 1. [github的使用](./documentation/github/github的使用.md)
     
 ## 8. MarkDown
@@ -66,7 +70,10 @@
 
 ## 9. 数据结构与算法
 
-
+# 工具
+## 1. Tmux
+#### 1. [下载安装初始化](./documentation/tmux/installation.md)
+#### 2. [用法简介](./documentation/tmux/useage.md)
 
 欢迎扫码加好友一起学习讨论：  
 ![](./media/img/qrcode.jpg "微信扫码加好友")
